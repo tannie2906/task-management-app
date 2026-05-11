@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
 import Overview from "./pages/Overview";
 import Projects from "./pages/Projects";
+import Calendar from "./pages/Calendar";
 
 
 function App() {
@@ -14,8 +15,12 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
-  
 
+      <Route path="/dashboard" element={<Dashboard />}>
+        <Route index element={<Tasks />} />
+        <Route path="calendar" element={<Calendar />} />
+      </Route>
+  
       {/* DASHBOARD WRAPPER */}
       <Route path="/dashboard" element={<Dashboard />}>
         <Route index element={<Overview />} />     {/* default page */}

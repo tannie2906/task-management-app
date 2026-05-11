@@ -35,6 +35,10 @@ export default function Dashboard() {
             Projects
           </button>
 
+          <button onClick={() => navigate("/dashboard/calendar")} className="text-left hover:bg-slate-700 p-2 rounded">
+            Calendar
+          </button>
+
         </nav>
 
         <button
