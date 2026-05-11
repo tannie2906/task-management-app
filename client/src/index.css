@@ -1,0 +1,41 @@
+/* 1. Tailwind must be at the TOP */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* glocal style where all page apply this */
+
+/* 2. CSS variables */
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+}
+
+/* 3. Global styles */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* 4. Normal CSS ONLY (no nesting) */
+h1, h2 {
+  color: var(--text-h);
+}
+
+/* example button style */
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+}
+
+/* hover MUST be like this */
+.btn:hover {
+  opacity: 0.8;
+}
