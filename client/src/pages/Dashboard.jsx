@@ -27,10 +27,6 @@ export default function Dashboard() {
             Dashboard
           </button>
 
-          <button onClick={() => navigate("/dashboard/tasks")} className="text-left hover:bg-slate-700 p-2 rounded">
-            Tasks
-          </button>
-
           <button onClick={() => navigate("/dashboard/projects")} className="text-left hover:bg-slate-700 p-2 rounded">
             Projects
           </button>
